@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
     const productData = await Product.findAll({
       include: [
         { model: Category },
-        { model: Tag }
+        { model: Tag, through: ProductTag }
       ]
     });
     res.status(200).json(productData);
@@ -37,7 +37,7 @@ router.get('/:id', async (req, res) => {
 });
 
 // create new product
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   /* req.body should look like this...
     {
       product_name: "Basketball",
@@ -122,7 +122,7 @@ router.delete('/:id', async (req, res) => {
       return;
     }
 
-    res.status(200).json(productData);
+    res.status(200).json("Product Deleted");
   } catch (err) {
     res.status(500).json(err);
   }
