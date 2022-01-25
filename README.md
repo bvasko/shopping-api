@@ -4,7 +4,7 @@
 
 ## Table of Contents
   - [Usage](#usage)
-  - [Screenshot](#screenshot)
+  - [Demo](#demo)
   - [Credits](#credits)
   - [License](#license)
 
@@ -29,7 +29,7 @@ To run the program:
 
 <br><br>
 # Demo Video
-[Watch Demo Video](./demo.mp4)
+[Watch Demo Video](https://www.loom.com/share/91bcfd84700c4e53858a01a3db2f8d0a)
 
 <br><br>
 # Contribute
